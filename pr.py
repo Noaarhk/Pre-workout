@@ -4,17 +4,17 @@
 #     k = int(input()) # 0 < k < 3
 #     print([a[t - 4] for t in range(k , k + 4)])
 #
-n = 3
-
-b=[]
-for _ in range(n):
-    a = [[-1 for _ in range(n)] for _ in range(n)]
-    b.append(a)
-b[0][0][0]=1
-b[0][1][1]=0
-# #b[layer][Height][width]]
+# n = 3
 #
-print (b)
+# b=[]
+# for _ in range(n):
+#     a = [[-1 for _ in range(n)] for _ in range(n)]
+#     b.append(a)
+# b[0][0][0]=1
+# b[0][1][1]=0
+# # #b[layer][Height][width]]
+# #
+# print (b)
 # b = []
 
 # wrong ans # for i in range (n):
@@ -39,6 +39,27 @@ print (b)
 # for i in range(4):
 #     for j in range(3):
 #         v[i][j] += a[i][j]
-#
+
 # print(v)
 # print([[a[i][j] + x[i][j] for j in range(3)] for i in range(4)])
+
+
+a = [[0 for _ in range(4)] for _ in range(3)]
+b = [[0] for _ in range(4) for _ in range(3)]
+
+print(a)
+print(b)
+k = 0
+
+def bot():
+    global k
+    for i in range(3):
+        for j in range(4):
+            a[i][j] = k
+            k += 1
+bot()
+print(a)
+
+c = a
+a[0][1] = 10000
+print(c)
