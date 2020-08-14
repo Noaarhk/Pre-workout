@@ -1,5 +1,5 @@
 from math import gcd
-
+#최대공약수
 
 def transpose(original_matrix, n, m):
     transposed_matrix = [[] for _ in range(n)]

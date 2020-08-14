@@ -32,7 +32,7 @@ def go_4():
 
 
 if __name__ == '__main__':
-    size_str, sp_str, direction = input().split()
+    size_str, sp_str, direction = input('input the size, the starting point, the direction in order : ').split()
     size = int(size_str)
     sp = int(sp_str)
 
